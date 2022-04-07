@@ -12,7 +12,7 @@ gem 'redis-namespace'
 gem 'compass'
 gem 'haml'
 gem 'typhoeus'
-gem 'yajl-ruby'
+gem 'yajl-ruby', '>= 1.4.2'
 gem 'pony'
 
 group :test do
