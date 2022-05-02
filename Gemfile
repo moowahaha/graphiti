@@ -3,8 +3,8 @@ source :rubygems
 
 gem 'rake'
 gem 'rack', '1.3.5'
-gem 'sinatra'
-gem 'sinatra-contrib'
+gem 'sinatra', '>= 2.2.0'
+gem 'sinatra-contrib', '>= 2.2.0'
 gem 'jim'
 gem 'closure-compiler'
 gem 'redis'
@@ -21,7 +21,7 @@ group :test do
 end
 
 group :development do
-  gem 'sinatra-reloader', :require => 'sinatra/reloader'
+  gem 'sinatra-reloader', '>= 1.0', :require => 'sinatra/reloader'
   gem 'thin'
   gem 'ruby-debug19'
 end
