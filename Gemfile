@@ -1,18 +1,18 @@
 # A sample Gemfile
 source :rubygems
 
-gem 'rake'
-gem 'rack', '1.3.5'
-gem 'sinatra'
-gem 'sinatra-contrib'
+gem 'rake', '>= 12.3.3'
+gem 'rack', '3.0.0'
+gem 'sinatra', '>= 2.2.3'
+gem 'sinatra-contrib', '>= 2.2.3'
 gem 'jim'
 gem 'closure-compiler'
 gem 'redis'
-gem 'redis-namespace'
+gem 'redis-namespace', '>= 1.1.1'
 gem 'compass'
-gem 'haml'
+gem 'haml', '>= 5.0.0'
 gem 'typhoeus'
-gem 'yajl-ruby'
+gem 'yajl-ruby', '>= 1.4.2'
 gem 'pony'
 
 group :test do
@@ -21,7 +21,7 @@ group :test do
 end
 
 group :development do
-  gem 'sinatra-reloader', :require => 'sinatra/reloader'
+  gem 'sinatra-reloader', '>= 1.0', :require => 'sinatra/reloader'
   gem 'thin'
   gem 'ruby-debug19'
 end
