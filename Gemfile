@@ -21,7 +21,7 @@ group :test do
 end
 
 group :development do
-  gem 'sinatra-reloader', :require => 'sinatra/reloader'
+  gem 'sinatra-reloader', '>= 1.0', :require => 'sinatra/reloader'
   gem 'thin'
   gem 'ruby-debug19'
 end
