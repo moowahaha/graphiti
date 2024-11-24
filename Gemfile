@@ -3,8 +3,8 @@ source :rubygems
 
 gem 'rake'
 gem 'rack', '1.3.5'
-gem 'sinatra'
-gem 'sinatra-contrib'
+gem 'sinatra', '>= 4.1.0'
+gem 'sinatra-contrib', '>= 4.1.0'
 gem 'jim'
 gem 'closure-compiler'
 gem 'redis'
