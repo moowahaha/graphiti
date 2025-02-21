@@ -2,7 +2,7 @@
 source :rubygems
 
 gem 'rake'
-gem 'rack', '1.3.5'
+gem 'rack', '2.2.11'
 gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'jim'
