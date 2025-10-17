@@ -2,10 +2,10 @@
 source :rubygems
 
 gem 'rake'
-gem 'rack', '1.3.5'
-gem 'sinatra'
-gem 'sinatra-contrib'
-gem 'jim'
+gem 'rack', '2.2.20'
+gem 'sinatra', '>= 4.2.0'
+gem 'sinatra-contrib', '>= 4.2.0'
+gem 'jim', '>= 0.3.2'
 gem 'closure-compiler'
 gem 'redis'
 gem 'redis-namespace'
@@ -21,11 +21,11 @@ group :test do
 end
 
 group :development do
-  gem 'sinatra-reloader', :require => 'sinatra/reloader'
-  gem 'thin'
+  gem 'sinatra-reloader', '>= 1.0', :require => 'sinatra/reloader'
+  gem 'thin', '>= 1.3.0'
   gem 'ruby-debug19'
 end
 
 group :production do
-  gem 'unicorn'
+  gem 'unicorn', '>= 4.2.0'
 end
